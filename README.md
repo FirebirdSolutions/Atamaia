@@ -1,0 +1,2 @@
+# Atamaia
+AI Management Platfotm
