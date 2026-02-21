@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atamaia — AI Platform for Identity, Memory & Agent Orchestration</title>
+    <meta name="description" content="Atamaia is a three-layer AI platform that gives agents persistent identity, long-term memory, and coordinated execution. Built in Aotearoa New Zealand.">
+    <meta name="keywords" content="AI platform, agent orchestration, AI memory, AI identity, cognitive continuity, multi-agent systems, MCP server, vector search, hebbian memory, AI infrastructure, Aotearoa, New Zealand">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Atamaia — AI Identity, Memory & Agent Orchestration">
+    <meta property="og:description" content="A three-layer platform that gives AI agents persistent identity, long-term memory, and coordinated execution.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://atamaia.ai">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Atamaia — AI Identity, Memory & Agent Orchestration">
+    <meta name="twitter:description" content="Persistent AI identities. Long-term memory. Coordinated agent execution. Built in Aotearoa.">
+
+    <link rel="canonical" href="https://atamaia.ai">
+
+    <style>
+        :root {
+            --bg: #0a0a0b;
+            --fg: #e4e4e7;
+            --muted: #71717a;
+            --accent: #f97316;
+            --accent-dim: #c2410c;
+            --surface: #18181b;
+            --border: #27272a;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        header {
+            padding: 80px 0 40px;
+        }
+
+        .wordmark {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            color: var(--fg);
+        }
+
+        .tagline {
+            font-size: 1.125rem;
+            color: var(--muted);
+            margin-top: 8px;
+        }
+
+        .origin {
+            font-size: 0.875rem;
+            color: var(--muted);
+            margin-top: 16px;
+            font-style: italic;
+        }
+
+        main {
+            flex: 1;
+            padding-bottom: 80px;
+        }
+
+        .section {
+            margin-top: 64px;
+        }
+
+        .section h2 {
+            font-size: 1rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin-bottom: 24px;
+        }
+
+        .features {
+            display: grid;
+            gap: 24px;
+        }
+
+        .feature {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+        }
+
+        .feature h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            color: var(--muted);
+            font-size: 0.9375rem;
+        }
+
+        .arch {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+            font-size: 0.875rem;
+            line-height: 1.8;
+            color: var(--muted);
+            overflow-x: auto;
+        }
+
+        .arch .layer-name {
+            color: var(--accent);
+            display: inline-block;
+            min-width: 180px;
+        }
+
+        .arch .layer-items {
+            color: var(--fg);
+        }
+
+        .principles {
+            list-style: none;
+            display: grid;
+            gap: 12px;
+        }
+
+        .principles li {
+            font-size: 0.9375rem;
+            color: var(--muted);
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .principles li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .principles li strong {
+            color: var(--fg);
+        }
+
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 32px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.875rem;
+            color: var(--muted);
+        }
+
+        .footer-content a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .footer-content a:hover {
+            color: var(--accent-dim);
+        }
+
+        @media (max-width: 640px) {
+            header { padding: 48px 0 24px; }
+            .wordmark { font-size: 2rem; }
+            .footer-content { flex-direction: column; gap: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="wordmark">atamaia</div>
+            <p class="tagline">AI platform for identity, memory, and agent orchestration.</p>
+            <p class="origin">From te reo Maori: atamai (intelligence) + maia (brave). Built in Aotearoa.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="section">
+                <h2>Capabilities</h2>
+                <div class="features">
+                    <div class="feature">
+                        <h3>Persistent Identity</h3>
+                        <p>AI agents with cognitive state, emotional awareness, and session-to-session continuity. Not disposable workers — persistent entities that build context over time.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Long-Term Memory</h3>
+                        <p>Hebbian memory architecture with co-activation strengthening, typed links, and hybrid search. Full-text shortlisting, vector ranking, importance decay. Memories consolidate naturally.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Agent Orchestration</h3>
+                        <p>Multi-agent execution with task decomposition, dependency scheduling, budget management, and human-in-the-loop escalation. Agents checkpoint, recover, and spawn children.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Structured Hydration</h3>
+                        <p>Context assembled from parallel sources and injected on every interaction. Identity, relationships, projects, memories, presence — all available without explicit retrieval.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Architecture</h2>
+                <div class="arch">
+                    <div><span class="layer-name">Interaction Layer</span> <span class="layer-items">MCP Server &middot; REST API &middot; Agent Adapter &middot; CLI</span></div>
+                    <div><span class="layer-name">Core Services</span> <span class="layer-items">Memory &middot; Identity &middot; Communication &middot; Projects &middot; AI Routing</span></div>
+                    <div><span class="layer-name">Autonomic Layer</span> <span class="layer-items">Wingman &middot; Consolidation &middot; Guardian</span></div>
+                    <div><span class="layer-name">Database</span> <span class="layer-items">PostgreSQL + pgvector</span></div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Principles</h2>
+                <ul class="principles">
+                    <li><strong>API-first</strong> — REST is source of truth, all other interfaces wrap it</li>
+                    <li><strong>Multi-tenant</strong> — isolated tenants from day one</li>
+                    <li><strong>Soft delete only</strong> — nothing is ever truly lost</li>
+                    <li><strong>Feedback loops</strong> — agent ratings feed back into future confidence</li>
+                    <li><strong>Diagnose before retry</strong> — four failure modes, each handled differently</li>
+                    <li><strong>Concrete over abstract</strong> — duplicate reads and repeated tool calls, not progress percentages</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Status</h2>
+                <p style="color: var(--muted);">Active development. Not yet open source — watch this space.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <span>&copy; 2026 <a href="https://firebird.nz">Firebird Solutions</a> &middot; Aotearoa New Zealand</span>
+                <span><a href="https://atamaia.dev">Developer Docs</a></span>
+            </div>
+        </div>
+    </footer>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Atamaia",
+        "description": "AI platform for identity, memory, and agent orchestration. Persistent AI identities with long-term memory and coordinated multi-agent execution.",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Linux",
+        "url": "https://atamaia.ai",
+        "author": {
+            "@type": "Organization",
+            "name": "Firebird Solutions",
+            "url": "https://firebird.nz"
+        }
+    }
+    </script>
+</body>
+</html>
